@@ -17,7 +17,9 @@
 
 ;; C-h はバックスペース
 (keyboard-translate ?\C-h ?\C-?)
+;; ヘルプは M-?
 (define-key global-map (kbd "M-?") 'help-for-help)
+;; Undo は C-u
 (define-key global-map [(C u)] 'undo)
 ;;行の先頭でC-kを一回押したら行全体を消去
 (setq kill-whole-line t)
